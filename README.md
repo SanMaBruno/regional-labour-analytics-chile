@@ -11,7 +11,7 @@ Pipeline profesional de Data Science para el análisis y visualización interact
 - `src/` — Código fuente modular.
 - `requirements.txt` — Dependencias del proyecto.
 
-
+```
 scraping/
 ├── 📂 config/                     # Configuración general del pipeline
 │   └── config.yaml
@@ -41,7 +41,7 @@ scraping/
 ├── � Makefile                    # Automatización de tareas
 ├── 📄 setup.py                    # Instalación como paquete (opcional)
 └── 📄 README.md                   # Documentación principal
-
+```
 ## Uso Rápido
 
 1. Instala dependencias:
