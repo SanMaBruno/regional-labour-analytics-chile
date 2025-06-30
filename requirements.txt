@@ -1,0 +1,61 @@
+# ====================================================================
+# 📦 DEPENDENCIAS PRINCIPALES - INE Chile Data Scraper
+# ====================================================================
+
+# 🌐 Web Scraping y Automatización
+selenium>=4.15.0
+webdriver-manager>=4.0.1
+
+# 📊 Análisis y Manipulación de Datos
+pandas>=2.0.0
+numpy>=1.24.0
+
+# 📓 Jupyter y Notebooks
+jupyter>=1.0.0
+notebook>=6.5.0
+ipykernel>=6.25.0
+
+# 🛠️ Utilidades y Parsing
+lxml>=4.9.0
+beautifulsoup4>=4.12.0
+requests>=2.31.0
+
+# 📈 Visualización (opcional pero recomendado)
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0
+
+# 🔧 Desarrollo y Testing
+pytest>=7.4.0
+black>=23.7.0
+flake8>=6.0.0
+mypy>=1.5.0
+
+# 📋 Logging y Monitoreo
+loguru>=0.7.0
+tqdm>=4.65.0
+
+# 🛡️ Manejo de Errores y Retry
+tenacity>=8.2.0
+urllib3>=2.0.0
+
+# 📅 Fechas y Tiempo
+python-dateutil>=2.8.0
+
+# 💾 Formatos de Datos
+openpyxl>=3.1.0
+xlsxwriter>=3.1.0
+
+# ====================================================================
+# 📝 NOTAS DE INSTALACIÓN:
+# 
+# Para instalar todas las dependencias:
+#   pip install -r requirements.txt
+#
+# Para instalar solo dependencias principales:
+#   pip install pandas selenium webdriver-manager jupyter lxml
+#
+# Para desarrollo:
+#   pip install -r requirements.txt
+#   pip install -e .
+# ==================================================================== 

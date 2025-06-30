@@ -1,0 +1,94 @@
+# ====================================================================
+# 🔧 CONFIGURACIÓN PRINCIPAL - INE Data Scraper
+# ====================================================================
+
+# 🌐 Configuración de Scraping
+scraping:
+  default_wait_time: 40
+  retry_attempts: 3
+  retry_delay: 5
+  headless_mode: false
+  page_load_timeout: 30
+  
+  # URLs y objetivos
+  targets:
+    ine_main:
+      url: "https://stat.ine.cl/Index.aspx?lang=es&SubSessionId=78e0518e-d028-4bf8-8d80-444b7277907c"
+      table_id: "tabletofreeze"
+      output_prefix: "ine_table"
+      description: "Tablas principales INE Chile"
+
+# 📊 Configuración de Datos
+data:
+  # Rutas de archivos
+  paths:
+    raw: "data/raw"
+    processed: "data/processed"
+    outputs: "outputs"
+    logs: "logs"
+  
+  # Formatos de exportación
+  export_formats:
+    - csv
+    - excel
+    - parquet
+  
+  # Configuración de limpieza
+  cleaning:
+    remove_duplicates: true
+    handle_missing_values: "drop"
+    date_format: "%Y-%m-%d"
+    encoding: "utf-8-sig"
+
+# 📈 Configuración de Análisis
+analysis:
+  # Métricas de calidad
+  quality_metrics:
+    completeness_threshold: 0.95
+    consistency_checks: true
+    outlier_detection: true
+  
+  # Visualizaciones por defecto
+  default_plots:
+    - histogram
+    - correlation_matrix
+    - time_series
+    - summary_statistics
+
+# 🚨 Configuración de Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file_rotation: "1 day"
+  max_file_size: "10 MB"
+  retention_days: 30
+
+# 📧 Configuración de Notificaciones (futuro)
+notifications:
+  email:
+    enabled: false
+    smtp_server: ""
+    port: 587
+    username: ""
+  
+  slack:
+    enabled: false
+    webhook_url: ""
+
+# 🔒 Configuración de Seguridad
+security:
+  rate_limiting:
+    requests_per_minute: 30
+    delay_between_requests: 2
+  
+  user_agents:
+    - "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+    - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+
+# 🧪 Configuración de Testing
+testing:
+  test_data_size: 100
+  mock_responses: true
+  performance_benchmarks:
+    max_execution_time: 300  # segundos
+    max_memory_usage: 500    # MB
