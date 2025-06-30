@@ -265,20 +265,13 @@ logging.basicConfig(level=logging.DEBUG)
 # Formatear código
 black scripts/ notebooks/
 
-# Linting
-flake8 scripts/
 ```
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
-
 ## 👨‍💻 Autor
 
-**Bruno San Martín**
+**Bruno San Martín Navarro**
 - GitHub: [@brunosanmartin](https://github.com/SanMaBruno)
 - LinkedIn: [bruno-sanmartin](https://www.linkedin.com/in/sanmabruno/)
-- Email: bruno.sanmartin@email.com
+
 
 ## 🙏 Agradecimientos
 
